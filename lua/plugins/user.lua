@@ -1,5 +1,3 @@
---if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
 -- You can also add or configure plugins by creating files in this `plugins/` folder
 -- PLEASE REMOVE THE EXAMPLES YOU HAVE NO INTEREST IN BEFORE ENABLING THIS FILE
 -- Here are some examples:
@@ -34,16 +32,6 @@ return {
   ███████████ ███    ███ █████████ █████ █████ ████ █████  
  ██████  █████████████████████ ████ █████ █████ ████ ██████ 
         ]],
-        },
-      },
-      explorer = {
-        hidden = false,
-      },
-      picker = {
-        sources = {
-          explorer = {
-            hidden = false,
-          },
         },
       },
     },
@@ -90,6 +78,30 @@ return {
         -- disable for .vim files, but it work for another filetypes
         Rule("a", "a", "-vim")
       )
+    end,
+  },
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    branch = "v3.x",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+      "MunifTanjim/nui.nvim",
+      -- {"3rd/image.nvim", opts = {}}, -- Optional image support in preview window: See `# Preview Mode` for more information
+    },
+    lazy = false, -- neo-tree will lazily load itself
+    --@module "neo-tree"
+    --@type neotree.Config?
+    config = function()
+      require("neo-tree").setup {
+        filesystem = {
+          filtered_items = {
+            visible = true, -- This is what you want: If you set this to `true`, all "hide" just mean "dimmed out"
+            hide_dotfiles = false,
+            hide_gitignored = true,
+          },
+        },
+      }
     end,
   },
 }
