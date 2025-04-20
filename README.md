@@ -27,4 +27,4 @@ git clone https://github.com/jsah-mc/nvim.git ~/.config/nvim
 nvim
 ```
 #### Thank You
-Thank you astronvim team for making this good neovim distro
+Thank you [astronvim](https://github.com/AstroNvim) team for making this good neovim distro
