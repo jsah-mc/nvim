@@ -1,4 +1,4 @@
-# AstroNvim Template
+# AstroNvim Template Modified by jsah-mc
 
 **NOTE:** This is for AstroNvim v5+
 
@@ -32,3 +32,5 @@ git clone https://github.com/<your_user>/<your_repository> ~/.config/nvim
 ```shell
 nvim
 ```
+#### Thank You
+Thank you astronvim team for making this good neovim distro
