@@ -35,8 +35,8 @@ nvim
 #### Make a backup of your current nvim and data folder
 
 ```shell
-mv ~\APPDATA\Local\nvim
-mv ~\APPDATA\Local\nvim-data
+mv ~\AppData\Local\nvim ~\AppData\Local\nvim.bak
+mv ~\AppData\Local\nvim-data ~\AppData\Local\nvim-data.bak
 ```
 
 #### Clone the repository
