@@ -4,7 +4,11 @@
 
 A template for getting started with [AstroNvim](https://github.com/AstroNvim/AstroNvim)
 
-## 🛠️ Installation
+## Requirements
+check the astronvim docs for requirements
+(https://docs.astronvim.com)
+
+## 🛠️ Installation for linux
 
 #### Make a backup of your current nvim and shared folder
 
@@ -26,5 +30,24 @@ git clone https://github.com/jsah-mc/nvim.git ~/.config/nvim
 ```shell
 nvim
 ```
+## 🛠️ Installation for windows
+
+#### Make a backup of your current nvim and data folder
+
+```shell
+mv ~\APPDATA\Local\nvim
+mv ~\APPDATAA\Local\nvim-data
+```
+
+#### Clone the repository
+```shell
+git clone https://github.com/jsah-mc/nvim.git ~\APPDATA\Local\nvim
+```
+#### Start Neovim
+```shell
+nvim
+```
+
+
 #### Thank You
 Thank you [astronvim](https://github.com/AstroNvim) team for making this good neovim distro
