@@ -8,6 +8,11 @@ return {
     build = "make tiktoken", -- Only on MacOS or Linux
     opts = {
       -- See Configuration section for options
+      mappings = {
+      submit_prompt = {
+        normal = '<Leader>s',
+        insert = '<Leader>zs'
+      }
     },
     -- See Commands section for default commands if you want to lazy load on them
     --config = function()
