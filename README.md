@@ -42,7 +42,7 @@ mv ~\APPDATA\Local\nvim-data
 #### Clone the repository
 ```shell
 # For PowerShell
-git clone https://github.com/NvChad/starter $ENV:USERPROFILE\AppData\Local\nvim
+git clone https://github.com/jsah-mc/nvim $ENV:USERPROFILE\AppData\Local\nvim
 ```
 #### Start Neovim
 ```shell
