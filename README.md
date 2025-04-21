@@ -36,7 +36,7 @@ nvim
 
 ```shell
 mv ~\APPDATA\Local\nvim
-mv ~\APPDATAA\Local\nvim-data
+mv ~\APPDATA\Local\nvim-data
 ```
 
 #### Clone the repository
