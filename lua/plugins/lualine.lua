@@ -10,42 +10,9 @@ return {
     },
   },
   config = function()
-    -- Bubbles config for lualine
--- Author: lokesh-krishna
--- MIT license, see LICENSE for more details.
-
--- stylua: ignore
-  local colors = {
-    blue   = '#89B4FA',
-    cyan   = '#89DCEB',
-    black  = '#11111B',
-    white  = '#CDD6F4',
-    red    = '#F38BA8',
-    violet = '#F5C2E7',
-    grey   = '#1E1E2E',
-  }
-
-    local bubbles_theme = {
-      normal = {
-        a = { fg = colors.black, bg = colors.blue },
-        b = { fg = colors.white },
-        c = { fg = colors.white },
-      },
-
-      insert = { a = { fg = colors.black, bg = colors.cyan } },
-      visual = { a = { fg = colors.black, bg = colors.violet } },
-      replace = { a = { fg = colors.black, bg = colors.red } },
-      command = { a = { fg = colors.white, bg = colors.grey } },
-      inactive = {
-        a = { fg = colors.white, bg = colors.black },
-        b = { fg = colors.white, bg = colors.black },
-        c = { fg = colors.white },
-      },
-    }
-
     require("lualine").setup {
       options = {
-        theme = bubbles_theme,
+        theme = "auto",
         component_separators = "",
         section_separators = { left = "", right = "" },
       },
